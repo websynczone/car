@@ -1,0 +1,58 @@
+{
+    "site": {
+        "name": "Premium Car Rental",
+        "url": "http://localhost/car-rental-website",
+        "email": "info@premiumcarrental.com",
+        "phone": "+1 (555) 123-4567",
+        "address": "123 Main Street, City, State 12345",
+        "working_hours": "Mon-Sun: 9:00 AM - 6:00 PM"
+    },
+    "database": {
+        "host": "localhost",
+        "name": "car_rental",
+        "user": "root",
+        "password": ""
+    },
+    "booking": {
+        "min_rental_days": 1,
+        "max_rental_days": 30,
+        "deposit_percentage": 20,
+        "cancellation_hours": 24,
+        "cancellation_fee_percentage": 10
+    },
+    "payment": {
+        "currency": "USD",
+        "tax_rate": 8.5,
+        "payment_methods": [
+            "credit_card",
+            "debit_card",
+            "paypal"
+        ]
+    },
+    "email": {
+        "smtp_host": "smtp.gmail.com",
+        "smtp_port": 587,
+        "smtp_user": "your-email@gmail.com",
+        "smtp_password": "your-app-password",
+        "from_email": "noreply@premiumcarrental.com",
+        "from_name": "Premium Car Rental"
+    },
+    "social_media": {
+        "facebook": "https://facebook.com/premiumcarrental",
+        "twitter": "https://twitter.com/premiumcarrental",
+        "instagram": "https://instagram.com/premiumcarrental"
+    },
+    "features": {
+        "enable_reviews": true,
+        "enable_newsletter": true,
+        "enable_blog": true,
+        "enable_multilingual": false,
+        "default_language": "en"
+    },
+    "security": {
+        "session_timeout": 3600,
+        "max_login_attempts": 5,
+        "password_min_length": 8,
+        "require_strong_password": true
+    }
+} 

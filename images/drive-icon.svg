@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="40" cy="40" r="36" fill="#007bff" fill-opacity="0.1"/>
+    
+    <!-- Car Icon -->
+    <g transform="translate(20, 20)">
+        <!-- Car Body -->
+        <path d="M8 24 L12 16 L28 16 L32 24" stroke="#007bff" stroke-width="3" fill="none"/>
+        <rect x="6" y="24" width="28" height="12" rx="2" stroke="#007bff" stroke-width="3" fill="none"/>
+        
+        <!-- Windows -->
+        <rect x="14" y="18" width="12" height="6" rx="1" stroke="#007bff" stroke-width="2" fill="none"/>
+        
+        <!-- Wheels -->
+        <circle cx="12" cy="36" r="4" stroke="#007bff" stroke-width="3" fill="none"/>
+        <circle cx="28" cy="36" r="4" stroke="#007bff" stroke-width="3" fill="none"/>
+        
+        <!-- Wheel Animation -->
+        <circle cx="12" cy="36" r="2" fill="#007bff">
+            <animate attributeName="cy" values="36;34;36" dur="1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="28" cy="36" r="2" fill="#007bff">
+            <animate attributeName="cy" values="36;34;36" dur="1s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg> 

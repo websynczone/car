@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+        </linearGradient>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+            <feOffset dx="0" dy="5" result="offsetblur" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Main Container -->
+    <rect x="50" y="50" width="700" height="500" rx="20" fill="url(#bgGradient)" filter="url(#shadow)" />
+
+    <!-- Support Center Elements -->
+    <g transform="translate(200, 150)">
+        <!-- Headset -->
+        <path d="M100,50 Q150,30 200,50 L200,100 Q150,120 100,100 Z" fill="#007bff" />
+        <circle cx="150" cy="50" r="30" fill="#0056b3" />
+        <path d="M120,50 L180,50" stroke="white" stroke-width="4" />
+        
+        <!-- Support Person -->
+        <circle cx="150" cy="200" r="50" fill="#f8f9fa" />
+        <path d="M130,180 Q150,160 170,180" stroke="#007bff" stroke-width="3" fill="none" />
+        <circle cx="130" cy="190" r="5" fill="#007bff" />
+        <circle cx="170" cy="190" r="5" fill="#007bff" />
+        
+        <!-- Chat Bubbles -->
+        <g transform="translate(250, 100)">
+            <rect x="0" y="0" width="150" height="80" rx="15" fill="white" />
+            <path d="M15,80 L30,60 L0,60 Z" fill="white" />
+            <text x="20" y="30" font-family="Arial" font-size="14" fill="#007bff">How can I help you today?</text>
+        </g>
+        
+        <g transform="translate(250, 200)">
+            <rect x="0" y="0" width="150" height="80" rx="15" fill="#007bff" />
+            <path d="M15,80 L30,60 L0,60 Z" fill="#007bff" />
+            <text x="20" y="30" font-family="Arial" font-size="14" fill="white">24/7 Support Available</text>
+        </g>
+    </g>
+
+    <!-- Floating Elements -->
+    <g transform="translate(400, 300)">
+        <!-- Clock -->
+        <circle cx="0" cy="0" r="30" fill="#007bff" opacity="0.1" />
+        <path d="M0,-20 L0,0 M0,0 L15,0" stroke="#007bff" stroke-width="3" />
+        
+        <!-- Checkmark -->
+        <path d="M50,0 L70,20 L90,-20" stroke="#28a745" stroke-width="4" fill="none" />
+        
+        <!-- Shield -->
+        <path d="M-50,0 L-30,20 L-30,40 L-70,40 L-70,20 Z" fill="#dc3545" opacity="0.1" />
+    </g>
+
+    <!-- Decorative Elements -->
+    <g transform="translate(100, 400)">
+        <circle cx="0" cy="0" r="20" fill="#007bff" opacity="0.1" />
+        <circle cx="40" cy="20" r="15" fill="#28a745" opacity="0.1" />
+        <circle cx="80" cy="0" r="25" fill="#dc3545" opacity="0.1" />
+    </g>
+</svg> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="40" cy="40" r="36" fill="#007bff" fill-opacity="0.1"/>
+    
+    <!-- Payment Icon -->
+    <g transform="translate(20, 20)">
+        <!-- Card Base -->
+        <rect x="8" y="12" width="24" height="16" rx="2" stroke="#007bff" stroke-width="3" fill="none"/>
+        
+        <!-- Card Lines -->
+        <line x1="12" y1="20" x2="28" y2="20" stroke="#007bff" stroke-width="2"/>
+        <line x1="12" y1="24" x2="20" y2="24" stroke="#007bff" stroke-width="2"/>
+        
+        <!-- Chip -->
+        <rect x="12" y="16" width="6" height="4" rx="1" fill="#007bff"/>
+        
+        <!-- Payment Symbol -->
+        <path d="M24 18 L26 22 L28 18" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="1s" repeatCount="indefinite"/>
+        </path>
+    </g>
+</svg> 

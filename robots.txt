@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /contact.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+Sitemap: https://cabinpatna.com/sitemap.xml
+
+# Disallow admin and private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /config/ 
